@@ -23,5 +23,5 @@ def predict():
    return render_template('index.html',
                           prediction_text='The price of the house should be $ {}'.format(output))
 
-
-app.run()
+if __name__ == '__main__':
+   app.run(debug=True)
